@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="/js/jquery-3.6.0.js"
+    ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- <script
+      language="JavaScript"
+      type="text/javascript"
+      src="/js/new.js"
+    ></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blogshare</title>
+  </head>
+  <body onload="setupDoubleClick( null, 5 ) ">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+            alt=""
+            width="20"
+            height="14"
+            class="d-inline-block align-text-top"
+          />
+          Bootstrap
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#science">Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#technology">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Psychology">Psychology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#health">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#economics">Economics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#politics">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#history">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#litrature">Litrature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#environment">Environment</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="nav">
+        <li class="nav-item"><a class="nav-link active" href="">Account</a></li>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="topic_list"></div>
+
+      <div class="content">
+        <div class="content_header">
+          <h1>Lorem</h1>
+          <div>
+            <button type="button" class="btn btn-outline-primary btn-sm">
+              Share
+            </button>
+            <button type="button" class="btn btn-outline-primary btn-sm">
+              Print
+            </button>
+            <button type="button" class="btn btn-outline-primary btn-sm">
+              Feedback
+            </button>
+          </div>
+          <div style="display: flex">
+            <div style="width: 50%">
+              <span class="content_details">By</span>
+              <span class="content_details">Dale Carnige</span> •
+              <span class="content_details">Last Edited:</span>•
+              <span class="content_details">Views:</span>
+            </div>
+            <div style="text-align: end; width: 50%">
+              <span class="content_details"
+                >% of readers found this article <b>helpful</b>.</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="target_div" class="content_text">
+          <p>
+            A blog is a website or page that is a part of a larger website.
+            Typically, it features articles written in a conversational style
+            with accompanying pictures or videos.
+          </p>
+        </div>
+      </div>
+
+      <div class="dictionary">
+        <audio id="sound"></audio>
+        <div class="container">
+          <div class="result" id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function playSound() {
+        sound.play();
+      }
+    </script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="/js/dblclick.js"
+    ></script>
+  </body>
+</html>
